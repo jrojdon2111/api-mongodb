@@ -5,8 +5,8 @@ const app = express()
 app.use(express.json())  // IMPORTANTE: SOPORTE PARA JSON
 
 
-const PORT = process.env.PORT ?? 3000
-const DB_URL = process.env.MONGODB_URI ?? 'mongodb://localhost:27017'
+const PORT = process.env.PORT ?? 3001   //Tiene el valor de de la variable de entorno process
+const DB_URL = process.env.MONGODB_URI ?? 'mongodb://localhost:27017'   //Toma la URI de mongo db
 const DB_NAME = process.env.DB_NAME ?? 'api'
 const COLLECTION = 'users'
 
@@ -69,7 +69,7 @@ app.put('/api/users/:id', async (request, response) => {
 
 // DELETE
 app.delete('/api/users/:id', async (request, response) => {
-    const database =  client.db(DB_NAME);
+    const database = client.db(DB_NAME);
     const collection = database.collection(COLLECTION);
 
     const { id } = request.params
