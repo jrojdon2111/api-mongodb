@@ -1,80 +1,55 @@
 # Ejemplos
 
-POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/users HTTP/1.1
+POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/productos HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Eva", 
-    "edad": 20 
+    "nombre": "Mesa", 
+    "precio": 20 
 }
 
 ### 
 
-POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/users HTTP/1.1
+POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/productos HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Jose", 
-    "edad": 21 
+    "nombre": "Silla", 
+    "precio": 21 
 }
 
 
 ### 
 
-GET http://localhost:3000/api/users HTTP/1.1
+GET http://localhost:3000/api/productos HTTP/1.1
 content-type: application/json
 
 ###
 
-GET http://localhost:3000/api/users/6542da20c20d9ad95c739701 HTTP/1.1
-content-type: application/json
-
-###
-
-PUT https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/users HTTP/1.1
+PUT https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/productos HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "José Antonio", 
-    "edad": 32 
+    "nombre": "Armario", 
+    "precio": 32 
 }
-
-###
-
-DELETE http://localhost:3000/api/users/6544e7ced958fc237ad628ed HTTP/1.1
-content-type: application/json
-
-###
-
-DELETE https://api-mongodb-dev-nnas.3.us-1.fl0.io/api/users/6542da20c20d9ad95c739701 HTTP/1.1
-content-type: application/json
 
 ### 
 
-POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/users HTTP/1.1
+POST https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/productos HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Joselito Matamoros", 
-    "edad": 69 
+    "nombre": "Cama", 
+    "precio": 69 
 }
 
 ###
 
-PUT https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/users/654bb60af6300dc80f83ae38 HTTP/1.1
+PUT https://api-mongodb-dev-hmzf.3.us-1.fl0.io/api/productos/654bb60af6300dc80f83ae38 HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Margarita", 
-    "edad": 90 
+    "nombre": "Ordenador", 
+    "precio": 90 
 }
-
-###
-
-DELETE https://api-mongodb-dev-nnas.3.us-1.fl0.io/api/users/654bb51ff6300dc80f83ae37 HTTP/1.1
-content-type: application/json
-
-###
-
-GET https://api-mongodb-dev-nnas.3.us-1.fl0.io/api/users/654bb51ff6300dc80f83ae37 HTTP/1.1
-content-type: application/json
